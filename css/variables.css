@@ -1,0 +1,52 @@
+/* ═══════════════════════════════════════════
+   DESIGN TOKENS — Yesha Patel Portfolio
+   All CSS custom properties live here.
+   Edit this file to retheme the entire site.
+═══════════════════════════════════════════ */
+
+:root {
+  /* Earthy Cosmic Palette (Derived from plant.jpg) */
+  --bg-main: #050505;
+  --bg: #050505;
+  --bg-card: rgba(20, 15, 10, 0.6); /* Translucent dark amber */
+
+  /* Earthy Accents */
+  --accent: #d4a373; /* Planet Amber */
+  --accent-secondary: #faedcd; /* Warm Star Light */
+  --accent-tertiary: #a98467; /* Ring Brown */
+  --accent-dim: rgba(212, 163, 115, 0.2);
+
+  /* Text Colors */
+  --fg: #fefae0; /* Warm cream */
+  --muted: rgba(254, 250, 224, 0.1);
+  --muted-fg: #d4a373;
+  --muted-fg-2: #faedcd;
+  --muted-fg-3: rgba(254, 250, 224, 0.3);
+
+  /* Soft, bubbly borders */
+  --radius-lg: 32px;
+  --radius-sm: 16px;
+
+  /* Dreamy Shadows */
+  --shadow-sm: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-hover: 0 12px 40px rgba(56, 189, 248, 0.3);
+
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-mono:    'DM Mono', monospace;
+
+  /* Spacing */
+  --section-pad:  8rem 3rem;
+  --nav-h:        72px;
+
+  /* Motion */
+  --ease-out:     cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out:  cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:     0.2s;
+  --dur-mid:      0.4s;
+  --dur-slow:     0.8s;
+
+  /* Borders */
+  --border:       1px solid var(--muted);
+  --border-light: 1px solid rgba(255, 255, 255, 0.05);
+}

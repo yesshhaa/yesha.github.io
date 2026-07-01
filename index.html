@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yesha Patel — Cybersecurity Student & Security Analyst in the Making" />
+  <title>Yesha Patel — YP.SEC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <div id="noise" aria-hidden="true"></div>
+  <div class="stars-container" aria-hidden="true">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </div>
+  <div class="planets-bg" aria-hidden="true">
+    <img src="assets/plant.jpg" class="bg-planet planet-main" alt="" />
+  </div>
+
+
+  <section id="hero">
+    <canvas id="webgl-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+
+
+      <h1 class="hero-title">Yesha Patel</h1>
+
+      <p class="hero-subtitle reveal" style="transition-delay:.2s">
+        I monitor systems, dissect threats, and decode attacks — turning raw log data into <span
+          class="accent">actionable security intelligence</span>.
+      </p>
+
+      <div class="hero-socials reveal" style="transition-delay:.4s">
+        <a href="https://github.com/yesshhaa" target="_blank" aria-label="GitHub" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+            <path d="M9 18c-4.51 2-5-2-7-2" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/yesha-patel-99710a328/" target="_blank" aria-label="LinkedIn"
+          class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect width="4" height="12" x="2" y="9" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:yesha.patel0710@gmail.com" aria-label="Email" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+          <span>Email</span>
+        </a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="scroll-hint"><span class="scroll-line"></span>Scroll</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Threat Detection</span><span>SIEM &amp; Splunk</span><span>Packet Forensics</span><span>Incident
+        Response</span><span>Penetration Testing</span><span>CTF Competitions</span><span>Blue Team
+        Ops</span><span>Python Automation</span>
+      <span>Threat Detection</span><span>SIEM &amp; Splunk</span><span>Packet Forensics</span><span>Incident
+        Response</span><span>Penetration Testing</span><span>CTF Competitions</span><span>Blue Team
+        Ops</span><span>Python Automation</span>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="about-text">
+      <div class="section-tag reveal">Who I Am</div>
+      <h2 class="section-title reveal" style="transition-delay:.1s">Building a Career in Cyber Defense</h2>
+      <p class="reveal" style="transition-delay:.2s">I'm Yesha Patel — a cybersecurity student driven by the challenge
+        of defending systems that everyone else takes for granted. My focus sits at the intersection of detection
+        engineering and incident response.</p>
+      <p class="reveal" style="transition-delay:.25s">I don't just read about attacks — I simulate them in my home lab,
+        analyze the telemetry they generate, and build detection rules that would catch the next one.</p>
+    </div>
+  </section>
+
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-num"><span class="count-num" data-target="4">0</span><span class="plus"></span></div>
+      <div class="stat-label">Projects completed</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span class="count-num" data-target="30">0</span><span class="plus">+</span></div>
+      <div class="stat-label">CTF challenges solved</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span class="count-num" data-target="5">0</span><span class="plus">+</span></div>
+      <div class="stat-label">Lab environments</div>
+    </div>
+  </div>  <section id="technical-skills" class="reveal">
+    <div class="skills-left">
+      <div class="section-tag">Toolkit</div>
+      <h2 class="section-title" style="transition-delay:.1s">Technical <span class="accent">Skills &amp; Tools</span></h2>
+      <p style="transition-delay:.2s">Specialized software, operating systems, and networking protocols I utilize to monitor, defend, and analyze complex environments.</p>
+    </div>
+    <div class="skills-list">
+      <div class="skills-grid reveal" style="transition-delay:.3s">
+        <div class="skill-tag">Splunk</div>
+        <div class="skill-tag">Wireshark</div>
+        <div class="skill-tag">Nmap</div>
+        <div class="skill-tag">Metasploit</div>
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">Kali Linux</div>
+        <div class="skill-tag">Burp Suite</div>
+        <div class="skill-tag">OSINT</div>
+        <div class="skill-tag">Active Directory</div>
+        <div class="skill-tag">Bash Scripting</div>
+        <div class="skill-tag">PowerShell</div>
+        <div class="skill-tag">Linux Administration</div>
+        <div class="skill-tag">Windows Security</div>
+        <div class="skill-tag">TCP/IP</div>
+        <div class="skill-tag">SIEM</div>
+        <div class="skill-tag">IDS/IPS</div>
+        <div class="skill-tag">Firewall Management</div>
+      </div>
+    </div>
+  </section>
+  <section id="work">
+    <div class="work-header">
+      <div>
+        <div class="section-tag reveal">Hands-On Work</div>
+        <h2 class="section-title reveal" style="transition-delay:.1s">Projects</h2>
+      </div>
+      <div class="work-count reveal">2024 — 2026</div>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card reveal" tabindex="0">
+        <div class="project-inner">
+          <span class="project-num">01</span>
+          <div class="project-info">
+            <div class="project-name">StudyNest — Personal Study Dashboard</div>
+            <div class="project-desc">A beautiful personal productivity dashboard built with Next.js 14, Firebase, and
+              Tailwind CSS. Built by a cybersecurity student for students.</div>
+            <div class="project-features">
+              <span class="feature-tag">Daily Tasks</span>
+              <span class="feature-tag">Pomodoro Timer</span>
+              <span class="feature-tag">Journal</span>
+              <span class="feature-tag">Project Tracking</span>
+              <span class="feature-tag">Mini Calendar</span>
+              <span class="feature-tag">Week Streak</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yesshhaa/studynest" class="project-link" target="_blank">GitHub Repository</a>
+              <a href="https://studynest-demo.vercel.app" class="project-link" target="_blank">Live Demo Website</a>
+            </div>
+          </div>
+          <div class="project-tags"><span class="project-tag">Next.js 14</span><span
+              class="project-tag">Firebase</span><span class="project-tag">Tailwind</span><span
+              class="project-tag">TypeScript</span></div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="320"></canvas></div>
+      </article>
+
+      <article class="project-card reveal" style="transition-delay:.1s" tabindex="0">
+        <div class="project-inner">
+          <span class="project-num">02</span>
+          <div class="project-info">
+            <div class="project-name">Improv — AI Prompt Refinement Tool</div>
+            <div class="project-desc">An AI-powered prompt refinement tool that turns rough ideas into highly
+              structured, specific prompts for better results from any LLM.</div>
+            <div class="project-features">
+              <span class="feature-tag">Groq API</span>
+              <span class="feature-tag">Llama 3.3 70B</span>
+              <span class="feature-tag">Prompt Library</span>
+              <span class="feature-tag">Dark/Light Mode</span>
+              <span class="feature-tag">Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yesshhaa/improv" class="project-link" target="_blank">GitHub Repository</a>
+              <a href="https://improve-refine.vercel.app" class="project-link" target="_blank">Live Demo Website</a>
+            </div>
+          </div>
+          <div class="project-tags"><span class="project-tag">Next.js 15</span><span
+              class="project-tag">TypeScript</span><span class="project-tag">Groq API</span><span
+              class="project-tag">Tailwind</span></div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="160"></canvas></div>
+      </article>
+
+      <article class="project-card reveal" style="transition-delay:.2s" tabindex="0">
+        <div class="project-inner">
+          <span class="project-num">03</span>
+          <div class="project-info">
+            <div class="project-name">Log Parser — AI-Powered Security Tool</div>
+            <div class="project-desc">A Python-based log analysis tool that detects brute-force attacks and path traversal in real-time, featuring AI-generated plain-English security summaries.</div>
+            <div class="project-features">
+              <span class="feature-tag">Python 3</span>
+              <span class="feature-tag">Regex Logic</span>
+              <span class="feature-tag">Groq API</span>
+              <span class="feature-tag">AI Summaries</span>
+              <span class="feature-tag">CLI Interface</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yesshhaa/Log-Parser" class="project-link" target="_blank">GitHub Repository</a>
+              <a href="https://github.com/yesshhaa/Log-Parser#usage" class="project-link" target="_blank">Usage Documentation</a>
+            </div>
+          </div>
+          <div class="project-tags"><span class="project-tag">Python</span><span
+              class="project-tag">Llama 3.3</span><span class="project-tag">Log Analysis</span><span
+              class="project-tag">Detection Engineering</span></div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="40"></canvas></div>
+      </article>
+
+      <article class="project-card reveal" style="transition-delay:.3s" tabindex="0">
+        <div class="project-inner">
+          <span class="project-num">04</span>
+          <div class="project-info">
+            <div class="project-name">Port Scanner — Async TCP Port Scanner</div>
+            <div class="project-desc">A highly scalable Python port scanner utilizing asyncio concurrency to probe hosts, identify versions with banner grabbing, evaluate threat vulnerability vectors, and map findings directly to MITRE ATT&amp;CK T1046.</div>
+            <div class="project-features">
+              <span class="feature-tag">asyncio</span>
+              <span class="feature-tag">Banner Grabbing</span>
+              <span class="feature-tag">Risk Classification</span>
+              <span class="feature-tag">MITRE ATT&amp;CK Mapping</span>
+              <span class="feature-tag">JSON/CSV Export</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yesshhaa/port-scanner" class="project-link" target="_blank">GitHub Repository</a>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python 3</span>
+            <span class="project-tag">asyncio</span>
+            <span class="project-tag">Network Security</span>
+            <span class="project-tag">MITRE T1046</span>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="120"></canvas></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="services" class="reveal">
+    <div class="services-left">
+      <div class="section-tag">Expertise Areas</div>
+      <h2 class="section-title" style="transition-delay:.1s">Core <span class="accent">Capabilities</span></h2>
+      <p style="transition-delay:.2s">Specialized security disciplines I actively practice — ranging from infrastructure
+        defense to deep-dive forensics and offensive testing.</p>
+    </div>
+    <div class="services-list">
+      <div class="service-item reveal"><span class="service-num">01</span>
+        <div>
+          <div class="service-name">Security Monitoring &amp; SIEM</div>
+          <div class="service-desc">Real-time log ingestion, alert correlation, and threat detection using Splunk.
+            Building dashboards that surface anomalies before they escalate into incidents.</div>
+        </div><span class="service-plus">+</span>
+      </div>
+      <div class="service-item reveal" style="transition-delay:.05s"><span class="service-num">02</span>
+        <div>
+          <div class="service-name">Network Traffic Analysis</div>
+          <div class="service-desc">Deep packet inspection with Wireshark — reconstructing attack paths, identifying C2
+            traffic, and spotting exfiltration attempts hiding in protocol noise.</div>
+        </div><span class="service-plus">+</span>
+      </div>
+      <div class="service-item reveal" style="transition-delay:.1s"><span class="service-num">03</span>
+        <div>
+          <div class="service-name">Vulnerability Assessment</div>
+          <div class="service-desc">Systematic scanning with Nmap and Metasploit — identifying exposed services and
+            misconfigurations, followed by clear risk-prioritized reporting.</div>
+        </div><span class="service-plus">+</span>
+      </div>
+      <div class="service-item reveal" style="transition-delay:.15s"><span class="service-num">04</span>
+        <div>
+          <div class="service-name">Incident Response &amp; Forensics</div>
+          <div class="service-desc">Working through the full IR lifecycle — containment, eradication, recovery — backed
+            by disk and memory forensics to reconstruct exactly what happened.</div>
+        </div><span class="service-plus">+</span>
+      </div>
+      <div class="service-item reveal" style="transition-delay:.2s"><span class="service-num">05</span>
+        <div>
+          <div class="service-name">Threat Intelligence &amp; OSINT</div>
+          <div class="service-desc">Gathering and correlating open-source intelligence to profile threat actors, enrich
+            indicators of compromise, and support proactive defense decisions.</div>
+        </div><span class="service-plus">+</span>
+      </div>
+      <div class="service-item reveal" style="transition-delay:.25s"><span class="service-num">06</span>
+        <div>
+          <div class="service-name">Cloud Security &amp; IAM</div>
+          <div class="service-desc">Securing cloud environments and managing identity—configuring AWS S3 policies, 
+            monitoring IAM logs, and ensuring least-privilege access across distributed systems.</div>
+        </div><span class="service-plus">+</span>
+      </div>
+      <div class="service-item reveal" style="transition-delay:.3s"><span class="service-num">07</span>
+        <div>
+          <div class="service-name">Malware Analysis &amp; Scripting</div>
+          <div class="service-desc">Deconstructing malicious binaries and automating security tasks with Python—building
+            custom parsers and scripts to accelerate the analysis of suspicious artifacts.</div>
+        </div><span class="service-plus">+</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="parallax-text" aria-hidden="true">
+    <div class="parallax-inner" id="parallax-text">DEFEND · DETECT · ANALYZE · RESPOND · DEFEND · DETECT · ANALYZE ·
+      RESPOND ·&nbsp;</div>
+  </div>
+
+
+  <div class="parallax-text" style="border-bottom:1px solid var(--muted)" aria-hidden="true">
+    <div class="parallax-inner" id="parallax-text-2">MONITOR · HUNT · CONTAIN · RECOVER · MONITOR · HUNT · CONTAIN ·
+      RECOVER ·&nbsp;</div>
+  </div>
+
+  <section id="terminal-section" class="reveal">
+    <div class="terminal-container">
+      <div class="terminal-header">
+        <div class="terminal-controls">
+          <span class="control close"></span>
+          <span class="control minimize"></span>
+          <span class="control maximize"></span>
+        </div>
+        <div class="terminal-title">yesha@yp-sec: ~</div>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <div class="terminal-output" id="terminal-output"></div>
+        <div class="terminal-input-line">
+          <span class="terminal-prompt">yesha@yp-sec:~$</span>
+          <input type="text" id="terminal-input" spellcheck="false" autocomplete="off" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/terminal.js" defer></script>
+
+  <section id="contact">
+    <div class="contact-bg-text" aria-hidden="true">CONNECT</div>
+    <div class="section-tag reveal" style="justify-content:center">Get in Touch</div>
+    <h2 class="contact-title reveal" style="transition-delay:.1s">Let's Talk<br /><span class="accent">Security</span>
+    </h2>
+    <p class="contact-sub reveal" style="transition-delay:.2s">Open to internships, junior SOC analyst roles, and
+      security research collaboration</p>
+    <a href="mailto:yesha.patel@email.com" class="contact-cta mag-btn reveal" style="transition-delay:.3s">Reach Out
+      <span class="contact-cta-arrow">↗</span></a>
+    <div class="contact-links reveal" style="transition-delay:.4s">
+      <a href="#">LinkedIn</a><a href="#">GitHub</a><a href="#">Hack The Box</a><a href="#">TryHackMe</a><a
+        href="#">Resume</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Yesha Patel · Cybersecurity Portfolio</p>
+    <p>Always learning · Always defending</p>
+  </footer>
+
+  <script>
+    // Simple starfield generator
+    function generateStars(id, count) {
+      const starContainer = document.getElementById(id);
+      if (!starContainer) return;
+      let shadows = '';
+      for (let i = 0; i < count; i++) {
+        const x = Math.floor(Math.random() * 2000);
+        const y = Math.floor(Math.random() * 2000);
+        shadows += `${x}px ${y}px #fff${i === count - 1 ? '' : ','}`;
+      }
+      starContainer.style.boxShadow = shadows;
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      generateStars('stars', 700);
+      generateStars('stars2', 200);
+      generateStars('stars3', 100);
+    });
+  </script>
+  <script src="js/webgl.js" defer></script>
+  <script src="js/lab-canvas.js" defer></script>
+  <script src="js/project-previews.js" defer></script>
+  <script src="js/scroll.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/nav.js" defer></script>
+</body>
+
+</html>

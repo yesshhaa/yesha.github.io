@@ -1,0 +1,87 @@
+/* ═══════════════════════════════════════════
+   ANIMATIONS — Yesha Patel Portfolio
+   All @keyframes and reveal utility classes
+═══════════════════════════════════════════ */
+
+/* ── Keyframes ── */
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes scrollPulse {
+  0%, 100% { width: 30px; opacity: 0.5; }
+  50%       { width: 60px; opacity: 1; }
+}
+
+@keyframes rotateObj {
+  from { transform: rotate(0deg) rotateY(0deg); }
+  to   { transform: rotate(360deg) rotateY(180deg); }
+}
+
+@keyframes nodePulse {
+  0%, 100% { box-shadow: 0 0 4px  rgba(212, 255, 79, 0.3); }
+  50%       { box-shadow: 0 0 16px rgba(212, 255, 79, 0.8); }
+}
+
+/* ── Scroll Reveal Classes ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity var(--dur-slow) ease, transform var(--dur-slow) ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity var(--dur-slow) ease, transform var(--dur-slow) ease;
+}
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity var(--dur-slow) ease, transform var(--dur-slow) ease;
+}
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ── Reduced Motion Overrides ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal,
+  .reveal-left,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-eyebrow,
+  .hero-title,
+  .hero-subtitle,
+  .hero-meta {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
