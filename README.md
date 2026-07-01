@@ -1,5 +1,4 @@
 # Yesha Patel — Cybersecurity Portfolio
-**YP.SEC** · Static Multi-File Portfolio Package
 
 ---
 
