@@ -44,6 +44,10 @@ Currently hunting for patterns in the noise.
   02. <span class="accent">Improv</span> - AI-powered prompt refinement tool (Next.js 15, Groq API)
   03. <span class="accent">Log Parser</span> - AI log analyzer (Python, Regex, Llama 3.3)
   04. <span class="accent">Port Scanner</span> - Async TCP scanner & threat contexts (Python, asyncio)
+  05. <span class="accent">Caesar Cipher</span> - Caesar cipher cracker using frequency analysis (Python)
+  06. <span class="accent">Dir Brute-Forcer</span> - Async web directory scanner with soft-404 detection (Python, asyncio)
+  07. <span class="accent">HashCrack</span> - Passphrase auditing and hash identifier tool (Python)
+  08. <span class="accent">Stego-tool</span> - Lossless pixel-LSB image steganography utility (Python)
 `,
     'website open': () => `
 <span class="cmd">SYSTEM INITIALIZATION SUCCESSFUL</span>
