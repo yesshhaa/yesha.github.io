@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Yesha Patel — Cybersecurity Student & Security Analyst in the Making" />
-  <title>Yesha Patel — YP.SEC</title>
+  <meta name="description" content="Yesha Patel — CompTIA Security+ Certified Cybersecurity Professional & Security Analyst based in Jersey City, NJ" />
+  <title>Yesha Patel — CompTIA Security+ Certified · YP.SEC</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap"
@@ -22,6 +22,24 @@
 
 <body>
 
+  <!-- ── Top Navigation Bar ── -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">YP<span class="accent">.SEC</span></a>
+    <div class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#resume">Resume</a>
+      <a href="#technical-skills">Skills</a>
+      <a href="#work">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#certifications" class="nav-cta">Certifications ↗</a>
+    <div class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
   <div id="noise" aria-hidden="true"></div>
   <div class="stars-container" aria-hidden="true">
     <div id="stars"></div>
@@ -32,20 +50,42 @@
     <img src="assets/plant.jpg" class="bg-planet planet-main" alt="" />
   </div>
 
-
   <section id="hero">
     <canvas id="webgl-canvas" aria-hidden="true"></canvas>
     <div class="hero-content">
 
+      <a href="#certifications" class="hero-status" style="text-decoration:none; cursor:pointer;" title="Click to view CompTIA Security+ certification">
+        <span class="status-dot"></span>
+        <span>CompTIA Security+ Certified · View Credential ↗</span>
+      </a>
 
       <h1 class="hero-title">Yesha Patel</h1>
 
       <p class="hero-subtitle reveal" style="transition-delay:.2s">
-        I monitor systems, dissect threats, and decode attacks — turning raw log data into <span
+        CompTIA Security+ certified cybersecurity professional & former Security Engineer. I monitor systems, dissect threats, and build defense tools — turning raw telemetry into <span
           class="accent">actionable security intelligence</span>.
       </p>
 
       <div class="hero-socials reveal" style="transition-delay:.4s">
+        <a href="#certifications" class="social-link" style="border-color:var(--accent); color:var(--accent);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+          <span>Certifications</span>
+        </a>
+        <a href="#resume" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Resume</span>
+        </a>
         <a href="https://github.com/yesshhaa" target="_blank" aria-label="GitHub" class="social-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -83,80 +123,430 @@
 
   <div class="marquee-section" aria-hidden="true">
     <div class="marquee-track">
-      <span>Threat Detection</span><span>SIEM &amp; Splunk</span><span>Packet Forensics</span><span>Incident
-        Response</span><span>Penetration Testing</span><span>CTF Competitions</span><span>Blue Team
-        Ops</span><span>Python Automation</span>
-      <span>Threat Detection</span><span>SIEM &amp; Splunk</span><span>Packet Forensics</span><span>Incident
-        Response</span><span>Penetration Testing</span><span>CTF Competitions</span><span>Blue Team
-        Ops</span><span>Python Automation</span>
+      <span>CompTIA Security+</span><span>Threat Detection</span><span>SIEM &amp; Splunk</span><span>NIST &amp; ISO 27001</span><span>OWASP Top 10</span><span>MITRE ATT&amp;CK</span><span>Incident Response</span><span>Penetration Testing</span><span>CTF Competitions</span><span>Blue Team Ops</span><span>Python Automation</span>
+      <span>CompTIA Security+</span><span>Threat Detection</span><span>SIEM &amp; Splunk</span><span>NIST &amp; ISO 27001</span><span>OWASP Top 10</span><span>MITRE ATT&amp;CK</span><span>Incident Response</span><span>Penetration Testing</span><span>CTF Competitions</span><span>Blue Team Ops</span><span>Python Automation</span>
     </div>
   </div>
 
   <section id="about">
     <div class="about-text">
       <div class="section-tag reveal">Who I Am</div>
-      <h2 class="section-title reveal" style="transition-delay:.1s">Building a Career in Cyber Defense</h2>
-      <p class="reveal" style="transition-delay:.2s">I'm Yesha Patel — a cybersecurity student driven by the challenge
-        of defending systems that everyone else takes for granted. My focus sits at the intersection of detection
-        engineering and incident response.</p>
-      <p class="reveal" style="transition-delay:.25s">I don't just read about attacks — I simulate them in my home lab,
-        analyze the telemetry they generate, and build detection rules that would catch the next one.</p>
+      <h2 class="section-title reveal" style="transition-delay:.1s">CompTIA Security+ Certified · Defending Digital Frontiers</h2>
+      <p class="reveal" style="transition-delay:.2s">I'm Yesha Patel — a CompTIA Security+ certified cybersecurity professional and Master of Science candidate at Saint Peter's University (GPA 3.7). With prior experience as an enterprise Security Engineer at IFUTURE, my focus sits at the intersection of threat detection, security architecture, endpoint protection, and detection engineering.</p>
+      <p class="reveal" style="transition-delay:.25s">I bridge the gap between high-level compliance frameworks (NIST, ISO 27001, OWASP Top 10, MITRE ATT&amp;CK) and hands-on offensive/defensive operations — analyzing security telemetry in Splunk, auditing Active Directory authentication flows, and building custom Python security tooling.</p>
     </div>
   </section>
 
   <div class="stats-bar">
     <div class="stat-item">
-      <div class="stat-num"><span class="count-num" data-target="8">0</span><span class="plus"></span></div>
-      <div class="stat-label">Projects completed</div>
+      <div class="stat-num"><span class="count-num" data-target="11">0</span><span class="plus">+</span></div>
+      <div class="stat-label">Security Tools &amp; Projects</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num"><span class="count-num" data-target="30">0</span><span class="plus">+</span></div>
-      <div class="stat-label">CTF challenges solved</div>
+      <div class="stat-num"><span class="count-num" data-target="40">0</span><span class="plus">+</span></div>
+      <div class="stat-label">CTF Challenges Solved</div>
     </div>
-    <div class="stat-item">
-      <div class="stat-num"><span class="count-num" data-target="5">0</span><span class="plus">+</span></div>
-      <div class="stat-label">Lab environments</div>
+    <a href="#certifications" class="stat-item" style="text-decoration:none; cursor:pointer;" title="View CompTIA Security+">
+      <div class="stat-num"><span class="count-num" data-target="1">0</span><span class="plus"></span></div>
+      <div class="stat-label">CompTIA Security+ Certified ↗</div>
+    </a>
+  </div>
+
+  <!-- ── Industry Certifications Section ── -->
+  <section id="certifications">
+    <div class="cert-header-section">
+      <div>
+        <div class="section-tag">Credentials</div>
+        <h2 class="section-title">Industry <span class="accent">Certifications</span></h2>
+      </div>
+      <div class="work-count">Verified Credentials</div>
     </div>
-  </div>  <section id="technical-skills" class="reveal">
-    <div class="skills-left">
-      <div class="section-tag">Toolkit</div>
-      <h2 class="section-title" style="transition-delay:.1s">Technical <span class="accent">Skills &amp; Tools</span></h2>
-      <p style="transition-delay:.2s">Specialized software, operating systems, and networking protocols I utilize to monitor, defend, and analyze complex environments.</p>
+
+    <div class="cert-grid">
+      <!-- CompTIA Security+ -->
+      <article class="cert-card" style="opacity:1 !important; visibility:visible !important;">
+        <div>
+          <div class="cert-header">
+            <div class="cert-badge-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <span class="cert-status-badge verified">
+              <span class="cert-dot"></span>
+              Verified Active
+            </span>
+          </div>
+          <div class="cert-issuer">CompTIA</div>
+          <h3 class="cert-title">Security+</h3>
+          <div class="cert-code">SY0-701 Certification</div>
+          <p class="cert-desc">
+            Validates baseline competence in assessing the security posture of an enterprise environment, implementing appropriate security solutions, monitoring and securing hybrid cloud/on-prem environments, and executing incident response protocols.
+          </p>
+          <div class="cert-skills">
+            <span class="cert-skill-tag">Threats &amp; Vulnerabilities</span>
+            <span class="cert-skill-tag">Security Architecture</span>
+            <span class="cert-skill-tag">Incident Response</span>
+            <span class="cert-skill-tag">Cryptography &amp; PKI</span>
+            <span class="cert-skill-tag">Identity &amp; Access (IAM)</span>
+            <span class="cert-skill-tag">Governance &amp; Risk</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--muted-fg-3);">CompTIA Official</span>
+          <span class="cert-link">Security+ Certified ↗</span>
+        </div>
+      </article>
+
+      <!-- ISC2 CC -->
+      <article class="cert-card" style="opacity:1 !important; visibility:visible !important;">
+        <div>
+          <div class="cert-header">
+            <div class="cert-badge-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-0.5-.05"/>
+                <path d="M6 18h14"/>
+              </svg>
+            </div>
+            <span class="cert-status-badge">
+              <span class="cert-dot"></span>
+              ISC2 Candidate · Prep Bank
+            </span>
+          </div>
+          <div class="cert-issuer">ISC2</div>
+          <h3 class="cert-title">Certified in Cybersecurity (CC)</h3>
+          <div class="cert-code">ISC2 Candidate · Study Repository</div>
+          <p class="cert-desc">
+            In-depth training and exam preparation covering foundational information security principles, incident recovery, business continuity, access controls, network security concepts, and security operations.
+          </p>
+          <div class="cert-skills">
+            <span class="cert-skill-tag">Security Principles</span>
+            <span class="cert-skill-tag">Incident Response</span>
+            <span class="cert-skill-tag">Business Continuity</span>
+            <span class="cert-skill-tag">Access Controls</span>
+            <span class="cert-skill-tag">Network Defense</span>
+          </div>
+        </div>
+        <div class="cert-footer">
+          <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--muted-fg-3);">ISC2 Candidate</span>
+          <a href="https://github.com/yesshhaa/CC-certification-Prep" target="_blank" class="cert-link">View Prep Repo ↗</a>
+        </div>
+      </article>
     </div>
-    <div class="skills-list">
-      <div class="skills-grid reveal" style="transition-delay:.3s">
-        <div class="skill-tag">Splunk</div>
-        <div class="skill-tag">Wireshark</div>
-        <div class="skill-tag">Nmap</div>
-        <div class="skill-tag">Metasploit</div>
-        <div class="skill-tag">Python</div>
-        <div class="skill-tag">Kali Linux</div>
-        <div class="skill-tag">Burp Suite</div>
-        <div class="skill-tag">OSINT</div>
-        <div class="skill-tag">Active Directory</div>
-        <div class="skill-tag">Bash Scripting</div>
-        <div class="skill-tag">PowerShell</div>
-        <div class="skill-tag">Linux Administration</div>
-        <div class="skill-tag">Windows Security</div>
-        <div class="skill-tag">TCP/IP</div>
-        <div class="skill-tag">SIEM</div>
-        <div class="skill-tag">IDS/IPS</div>
-        <div class="skill-tag">Firewall Management</div>
+  </section>
+
+  <!-- ── Resume & Career Section ── -->
+  <section id="resume">
+    <div class="cert-header-section">
+      <div>
+        <div class="section-tag">Curriculum Vitae</div>
+        <h2 class="section-title">Experience &amp; <span class="accent">Education</span></h2>
+      </div>
+      <div class="work-count">Professional Track</div>
+    </div>
+
+    <!-- Resume Contact & Action Bar -->
+    <div class="resume-top-bar">
+      <div class="resume-contact-items">
+        <div class="resume-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>Jersey City, NJ</span>
+        </div>
+        <div class="resume-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <a href="tel:5513589212">(551) 358-9212</a>
+        </div>
+        <div class="resume-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+          <a href="mailto:yesha.patel0710@gmail.com">yesha.patel0710@gmail.com</a>
+        </div>
+      </div>
+      <div class="resume-actions">
+        <a href="mailto:yesha.patel0710@gmail.com?subject=Opportunity%20Inquiry%20-%20Yesha%20Patel" class="resume-btn resume-btn-primary">
+          Contact Me ↗
+        </a>
+        <button onclick="window.print()" class="resume-btn resume-btn-secondary" title="Print or save as PDF">
+          Print / Save PDF
+        </button>
+      </div>
+    </div>
+
+    <!-- Resume Grid: Experience & Education -->
+    <div class="resume-grid">
+
+      <!-- Column 1: Work Experience -->
+      <div class="resume-column">
+        <h3 class="resume-column-title">Work Experience</h3>
+        <div class="timeline">
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-role">Security Engineer</span>
+              <span class="timeline-date-badge">Jun 2023 – Aug 2024</span>
+            </div>
+            <div class="timeline-org">
+              <span>IFUTURE</span> · <span>Anand, Gujarat</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Administered user accounts and access permissions under enterprise authentication controls, applying least-privilege principles to reduce unauthorized access risk.</li>
+              <li>Monitored system logs and network activity across 20+ endpoints to detect anomalies, assess risk exposure, and maintain operational uptime.</li>
+              <li>Enforced endpoint security standards across desktop, laptop, and printer deployments, including antivirus configuration and hardening.</li>
+              <li>Ran a recurring security patch management process across multiple systems, reducing vulnerability exposure and supporting continuous compliance with internal security policy.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Enterprise Authentication</span>
+              <span class="timeline-tag">Least-Privilege</span>
+              <span class="timeline-tag">Endpoint Security</span>
+              <span class="timeline-tag">Antivirus Hardening</span>
+              <span class="timeline-tag">Patch Management</span>
+              <span class="timeline-tag">Log Monitoring</span>
+              <span class="timeline-tag">Risk Assessment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Education -->
+      <div class="resume-column">
+        <h3 class="resume-column-title">Education</h3>
+        <div class="timeline">
+
+          <!-- Master's Degree -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-role">Master of Science in Cybersecurity</span>
+              <span class="timeline-date-badge">Feb 2026</span>
+            </div>
+            <div class="timeline-org">
+              <span>Saint Peter's University</span> · <span>Jersey City, NJ</span>
+              <span class="timeline-gpa-badge">GPA: 3.7</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li><strong>Relevant Coursework:</strong> Risk Assessment &amp; Compliance, Digital Forensics, Ethical Hacking &amp; Penetration Testing, Cryptography, Malware Analysis &amp; Defense.</li>
+              <li>Comprehensive focus on threat actor profiling, secure architecture design, forensic memory/disk reconstruction, and corporate compliance operations.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Risk Assessment &amp; Compliance</span>
+              <span class="timeline-tag">Digital Forensics</span>
+              <span class="timeline-tag">Penetration Testing</span>
+              <span class="timeline-tag">Cryptography</span>
+              <span class="timeline-tag">Malware Defense</span>
+            </div>
+          </div>
+
+          <!-- Bachelor's Degree -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-role">Bachelor of Science in Information Technology</span>
+              <span class="timeline-date-badge">Apr 2023</span>
+            </div>
+            <div class="timeline-org">
+              <span>Sardar Patel University</span> · <span>Anand, Gujarat</span>
+              <span class="timeline-gpa-badge">GPA: 3.8</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li><strong>Relevant Coursework:</strong> Database Management Systems, Operating Systems, Computer Networking, Object-Oriented Programming.</li>
+              <li>Strong foundational knowledge in networking protocols, systems architecture, relational databases, and secure programming logic.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Database Management</span>
+              <span class="timeline-tag">Operating Systems</span>
+              <span class="timeline-tag">Computer Networking</span>
+              <span class="timeline-tag">OOP</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Leadership & Campus Involvement Box -->
+    <div class="leadership-box">
+      <h3 class="leadership-title">Leadership &amp; Campus Involvement</h3>
+      <div class="leadership-grid">
+        <div class="leadership-item">
+          <div class="leadership-item-icon">🏆</div>
+          <div class="leadership-item-title">2nd Place — Programming Competition</div>
+          <div class="leadership-item-desc">Awarded second place in a collegiate programming competition for designing and engineering an innovative software application (2022).</div>
+        </div>
+        <div class="leadership-item">
+          <div class="leadership-item-icon">🎤</div>
+          <div class="leadership-item-title">Seminars, Papers &amp; Debates</div>
+          <div class="leadership-item-desc">Participated and delivered presentations in technical seminars, paper presentations, and debate competitions centered on IT and emerging cybersecurity technology (2022).</div>
+        </div>
+        <div class="leadership-item">
+          <div class="leadership-item-icon">🛡️</div>
+          <div class="leadership-item-title">CTFs &amp; Security Community</div>
+          <div class="leadership-item-desc">Active participant in competitive Capture The Flag events (picoCTF, OverTheWire Bandit), security hackathons, and collaborative online defense communities.</div>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- ── Technical Skills & Frameworks ── -->
+  <section id="technical-skills">
+    <div class="skills-left">
+      <div class="section-tag">Core Competencies</div>
+      <h2 class="section-title">Technical <span class="accent">Skills &amp; Tools</span></h2>
+      <p>Comprehensive toolsets, security frameworks, and technical domains practiced across enterprise infrastructure defense and threat research.</p>
+    </div>
+    <div class="skills-list">
+      <div class="skills-grid">
+        <!-- GRC -->
+        <div class="skill-tag">Risk Assessment</div>
+        <div class="skill-tag">Vulnerability Assessment</div>
+        <div class="skill-tag">Security Policy</div>
+        <div class="skill-tag">Compliance Monitoring</div>
+        <div class="skill-tag">Control Documentation</div>
+        <div class="skill-tag">Alert Triage</div>
+        <!-- Frameworks -->
+        <div class="skill-tag">OWASP Top 10</div>
+        <div class="skill-tag">MITRE ATT&amp;CK</div>
+        <div class="skill-tag">NIST Framework</div>
+        <div class="skill-tag">ISO 27001</div>
+        <!-- Tools -->
+        <div class="skill-tag">Splunk (SIEM)</div>
+        <div class="skill-tag">Wireshark</div>
+        <div class="skill-tag">Burp Suite</div>
+        <div class="skill-tag">Metasploit</div>
+        <div class="skill-tag">Nmap</div>
+        <div class="skill-tag">OpenVAS</div>
+        <div class="skill-tag">Nessus</div>
+        <div class="skill-tag">Shodan</div>
+        <div class="skill-tag">Autopsy</div>
+        <div class="skill-tag">Volatility</div>
+        <div class="skill-tag">Hashcat</div>
+        <div class="skill-tag">ExifTool</div>
+        <div class="skill-tag">Kali Linux</div>
+        <div class="skill-tag">Snort (IDS/IPS)</div>
+        <!-- Systems -->
+        <div class="skill-tag">Active Directory</div>
+        <div class="skill-tag">Endpoint Security</div>
+        <div class="skill-tag">Windows Security</div>
+        <div class="skill-tag">Linux Administration</div>
+        <!-- Scripting -->
+        <div class="skill-tag">Python (asyncio)</div>
+        <div class="skill-tag">Bash Scripting</div>
+        <div class="skill-tag">PowerShell</div>
+        <div class="skill-tag">SQL / MySQL</div>
+        <div class="skill-tag">React / Next.js</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects Section ── -->
   <section id="work">
     <div class="work-header">
       <div>
         <div class="section-tag reveal">Hands-On Work</div>
-        <h2 class="section-title reveal" style="transition-delay:.1s">Projects</h2>
+        <h2 class="section-title reveal" style="transition-delay:.1s">Projects &amp; Tools</h2>
       </div>
       <div class="work-count reveal">2024 — 2026</div>
     </div>
     <div class="projects-grid">
+
+      <!-- 01 Improve 2.0 Web Vulnerability Scanner -->
       <article class="project-card reveal" tabindex="0">
         <div class="project-inner">
           <span class="project-num">01</span>
+          <div class="project-info">
+            <div class="project-name">Improve 2.0 — Web Vulnerability Scanner</div>
+            <div class="project-desc">Built a full-stack security scanner assessing web applications against all 10 OWASP Top 10 categories, translating raw findings into a structured risk-and-remediation report. Integrated an LLM API to auto-generate plain-language fix guidance for each finding, closing the gap between technical scan output and actionable remediation for non-technical stakeholders.</div>
+            <div class="project-features">
+              <span class="feature-tag">Python &amp; FastAPI</span>
+              <span class="feature-tag">React Frontend</span>
+              <span class="feature-tag">Groq LLM API</span>
+              <span class="feature-tag">OWASP Top 10</span>
+              <span class="feature-tag">Automated Remediation Reports</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yesshhaa/improv" class="project-link" target="_blank">GitHub Repository</a>
+              <a href="https://improve-refine.vercel.app" class="project-link" target="_blank">Live Demo Website</a>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">FastAPI</span>
+            <span class="project-tag">React</span>
+            <span class="project-tag">Groq API</span>
+            <span class="project-tag">OWASP Top 10</span>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="160"></canvas></div>
+      </article>
+
+      <!-- 02 SOC-Style Log Parser -->
+      <article class="project-card reveal" style="transition-delay:.1s" tabindex="0">
+        <div class="project-inner">
+          <span class="project-num">02</span>
+          <div class="project-info">
+            <div class="project-name">SOC-Style Log Parser — Security Analysis Tool</div>
+            <div class="project-desc">Built a log analysis tool detecting brute-force and credential-stuffing patterns, modeled on Tier-1 SOC triage and control-monitoring workflows. Structured output to support faster incident investigation and audit-ready documentation, utilizing Python for log analysis and incident monitoring with a built-in risk-assessment layer for prioritizing flagged events.</div>
+            <div class="project-features">
+              <span class="feature-tag">Python 3</span>
+              <span class="feature-tag">Tier-1 SOC Workflows</span>
+              <span class="feature-tag">Credential Stuffing Detection</span>
+              <span class="feature-tag">Risk Assessment Layer</span>
+              <span class="feature-tag">Audit-Ready Output</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yesshhaa/Log-Parser" class="project-link" target="_blank">GitHub Repository</a>
+              <a href="https://github.com/yesshhaa/Log-Parser#usage" class="project-link" target="_blank">Usage Documentation</a>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">SOC Triage</span>
+            <span class="project-tag">Incident Monitoring</span>
+            <span class="project-tag">Log Analysis</span>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="40"></canvas></div>
+      </article>
+
+      <!-- 03 Async TCP Port Scanner -->
+      <article class="project-card reveal" style="transition-delay:.2s" tabindex="0">
+        <div class="project-inner">
+          <span class="project-num">03</span>
+          <div class="project-info">
+            <div class="project-name">Async TCP Port Scanner — Reconnaissance Tool</div>
+            <div class="project-desc">Built an asynchronous network scanner with MITRE ATT&amp;CK T1046 technique mapping and JSON/CSV export for security reporting and risk-tracking workflows. Used Python for asynchronous network traffic analysis, with lightweight endpoint-facing reconnaissance and service banner grabbing built in.</div>
+            <div class="project-features">
+              <span class="feature-tag">asyncio Concurrency</span>
+              <span class="feature-tag">MITRE ATT&amp;CK T1046</span>
+              <span class="feature-tag">Service Banner Grabbing</span>
+              <span class="feature-tag">JSON/CSV Export</span>
+              <span class="feature-tag">Endpoint Recon</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yesshhaa/Port-Scanner" class="project-link" target="_blank">GitHub Repository</a>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python 3</span>
+            <span class="project-tag">asyncio</span>
+            <span class="project-tag">MITRE T1046</span>
+            <span class="project-tag">Network Recon</span>
+          </div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="120"></canvas></div>
+      </article>
+
+      <!-- 04 StudyNest -->
+      <article class="project-card reveal" style="transition-delay:.3s" tabindex="0">
+        <div class="project-inner">
+          <span class="project-num">04</span>
           <div class="project-info">
             <div class="project-name">StudyNest — Personal Study Dashboard</div>
             <div class="project-desc">A beautiful personal productivity dashboard built with Next.js 14, Firebase, and
@@ -171,7 +561,7 @@
             </div>
             <div class="project-links">
               <a href="https://github.com/yesshhaa/studynest" class="project-link" target="_blank">GitHub Repository</a>
-              <a href="https://studynest-demo.vercel.app" class="project-link" target="_blank">Live Demo Website</a>
+              <a href="https://studynest-amber.vercel.app/auth" class="project-link" target="_blank">Live Demo Website</a>
             </div>
           </div>
           <div class="project-tags"><span class="project-tag">Next.js 14</span><span
@@ -182,97 +572,17 @@
         <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="320"></canvas></div>
       </article>
 
-      <article class="project-card reveal" style="transition-delay:.1s" tabindex="0">
-        <div class="project-inner">
-          <span class="project-num">02</span>
-          <div class="project-info">
-            <div class="project-name">Improv — AI Prompt Refinement Tool</div>
-            <div class="project-desc">An AI-powered prompt refinement tool that turns rough ideas into highly
-              structured, specific prompts for better results from any LLM.</div>
-            <div class="project-features">
-              <span class="feature-tag">Groq API</span>
-              <span class="feature-tag">Llama 3.3 70B</span>
-              <span class="feature-tag">Prompt Library</span>
-              <span class="feature-tag">Dark/Light Mode</span>
-              <span class="feature-tag">Responsive</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/yesshhaa/improv" class="project-link" target="_blank">GitHub Repository</a>
-              <a href="https://improve-refine.vercel.app" class="project-link" target="_blank">Live Demo Website</a>
-            </div>
-          </div>
-          <div class="project-tags"><span class="project-tag">Next.js 15</span><span
-              class="project-tag">TypeScript</span><span class="project-tag">Groq API</span><span
-              class="project-tag">Tailwind</span></div>
-          <div class="project-arrow">↗</div>
-        </div>
-        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="160"></canvas></div>
-      </article>
-
-      <article class="project-card reveal" style="transition-delay:.2s" tabindex="0">
-        <div class="project-inner">
-          <span class="project-num">03</span>
-          <div class="project-info">
-            <div class="project-name">Log Parser — AI-Powered Security Tool</div>
-            <div class="project-desc">A Python-based log analysis tool that detects brute-force attacks and path traversal in real-time, featuring AI-generated plain-English security summaries.</div>
-            <div class="project-features">
-              <span class="feature-tag">Python 3</span>
-              <span class="feature-tag">Regex Logic</span>
-              <span class="feature-tag">Groq API</span>
-              <span class="feature-tag">AI Summaries</span>
-              <span class="feature-tag">CLI Interface</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/yesshhaa/Log-Parser" class="project-link" target="_blank">GitHub Repository</a>
-              <a href="https://github.com/yesshhaa/Log-Parser#usage" class="project-link" target="_blank">Usage Documentation</a>
-            </div>
-          </div>
-          <div class="project-tags"><span class="project-tag">Python</span><span
-              class="project-tag">Llama 3.3</span><span class="project-tag">Log Analysis</span><span
-              class="project-tag">Detection Engineering</span></div>
-          <div class="project-arrow">↗</div>
-        </div>
-        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="40"></canvas></div>
-      </article>
-
-      <article class="project-card reveal" style="transition-delay:.3s" tabindex="0">
-        <div class="project-inner">
-          <span class="project-num">04</span>
-          <div class="project-info">
-            <div class="project-name">Port Scanner — Async TCP Port Scanner</div>
-            <div class="project-desc">A highly scalable Python port scanner utilizing asyncio concurrency to probe hosts, identify versions with banner grabbing, evaluate threat vulnerability vectors, and map findings directly to MITRE ATT&amp;CK T1046.</div>
-            <div class="project-features">
-              <span class="feature-tag">asyncio</span>
-              <span class="feature-tag">Banner Grabbing</span>
-              <span class="feature-tag">Risk Classification</span>
-              <span class="feature-tag">MITRE ATT&amp;CK Mapping</span>
-              <span class="feature-tag">JSON/CSV Export</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/yesshhaa/port-scanner" class="project-link" target="_blank">GitHub Repository</a>
-            </div>
-          </div>
-          <div class="project-tags">
-            <span class="project-tag">Python 3</span>
-            <span class="project-tag">asyncio</span>
-            <span class="project-tag">Network Security</span>
-            <span class="project-tag">MITRE T1046</span>
-          </div>
-          <div class="project-arrow">↗</div>
-        </div>
-        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="120"></canvas></div>
-      </article>
-
+      <!-- 05 Caesar Cipher -->
       <article class="project-card reveal" style="transition-delay:.1s" tabindex="0">
         <div class="project-inner">
           <span class="project-num">05</span>
           <div class="project-info">
             <div class="project-name">Caesar Cipher Cracker — Frequency Analysis Tool</div>
-            <div class="project-desc">A frequency-analysis tool that cracks Caesar cipher encryption by exploiting English letter distribution — no brute force needed.</div>
+            <div class="project-desc">A classical cryptanalysis tool that breaks Caesar cipher encryption using English letter frequency distribution — cracking ciphertext automatically without brute-forcing or knowing the secret key.</div>
             <div class="project-features">
               <span class="feature-tag">Frequency Analysis</span>
-              <span class="feature-tag">Math Validation</span>
-              <span class="feature-tag">Decoder Logic</span>
+              <span class="feature-tag">Chi-Squared Scoring</span>
+              <span class="feature-tag">Cryptanalysis</span>
               <span class="feature-tag">CLI Tool</span>
             </div>
             <div class="project-links">
@@ -286,9 +596,89 @@
         <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="200"></canvas></div>
       </article>
 
+      <!-- 06 Study Tracker -->
       <article class="project-card reveal" style="transition-delay:.2s" tabindex="0">
         <div class="project-inner">
           <span class="project-num">06</span>
+          <div class="project-info">
+            <div class="project-name">Cybersecurity Study Tracker — Terminal Matrix UI</div>
+            <div class="project-desc">A custom-built study tracking system designed with an immersive terminal-style UI to monitor competency progress across 17 distinct cybersecurity domains and 159 specialized topics.</div>
+            <div class="project-features">
+              <span class="feature-tag">17 Security Subjects</span>
+              <span class="feature-tag">159 Curriculum Topics</span>
+              <span class="feature-tag">Terminal Vibe UI</span>
+              <span class="feature-tag">Progress Matrix</span>
+              <span class="feature-tag">Client-Side Persistence</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yesshhaa/Study-tracker" class="project-link" target="_blank">GitHub Repository</a>
+            </div>
+          </div>
+          <div class="project-tags"><span class="project-tag">HTML5 / CSS3</span><span
+              class="project-tag">JavaScript</span><span class="project-tag">Security Matrix</span><span
+              class="project-tag">Terminal UI</span></div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="270"></canvas></div>
+      </article>
+
+      <!-- 07 CTF Writeups -->
+      <article class="project-card reveal" style="transition-delay:.3s" tabindex="0">
+        <div class="project-inner">
+          <span class="project-num">07</span>
+          <div class="project-info">
+            <div class="project-name">CTF &amp; Wargame Writeups — PicoCTF &amp; OverTheWire</div>
+            <div class="project-desc">Documented challenge solutions, methodology breakdowns, and custom exploitation scripts covering web exploitation, cryptography, binary exploitation, and Linux privilege escalation across PicoCTF and OverTheWire Bandit.</div>
+            <div class="project-features">
+              <span class="feature-tag">PicoCTF</span>
+              <span class="feature-tag">OverTheWire Bandit</span>
+              <span class="feature-tag">Linux PrivEsc</span>
+              <span class="feature-tag">Packet Forensics</span>
+              <span class="feature-tag">Exploit Scripting</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yesshhaa/CTF-" class="project-link" target="_blank">PicoCTF Writeups</a>
+              <a href="https://github.com/yesshhaa/Over-the-Wire" class="project-link" target="_blank">OverTheWire Repository</a>
+            </div>
+          </div>
+          <div class="project-tags"><span class="project-tag">CTF</span><span
+              class="project-tag">Binary Exploitation</span><span class="project-tag">Forensics</span><span
+              class="project-tag">Linux</span></div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="330"></canvas></div>
+      </article>
+
+      <!-- 08 Windows Login Security -->
+      <article class="project-card reveal" style="transition-delay:.1s" tabindex="0">
+        <div class="project-inner">
+          <span class="project-num">08</span>
+          <div class="project-info">
+            <div class="project-name">Windows Login &amp; AD Security Analysis</div>
+            <div class="project-desc">Comprehensive architectural and vulnerability review of Windows logon architectures, Kerberos/NTLM authentication protocols, LSASS memory protection, and security event log auditing (Event IDs 4624/4625).</div>
+            <div class="project-features">
+              <span class="feature-tag">Kerberos &amp; NTLM</span>
+              <span class="feature-tag">Active Directory</span>
+              <span class="feature-tag">Event ID 4624/4625</span>
+              <span class="feature-tag">Pass-the-Hash Defense</span>
+              <span class="feature-tag">LSASS Protection</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yesshhaa/Windows-Login" class="project-link" target="_blank">GitHub Repository</a>
+            </div>
+          </div>
+          <div class="project-tags"><span class="project-tag">Active Directory</span><span
+              class="project-tag">Windows Security</span><span class="project-tag">Kerberos</span><span
+              class="project-tag">Identity Defense</span></div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="190"></canvas></div>
+      </article>
+
+      <!-- 09 Directory Brute-Forcer -->
+      <article class="project-card reveal" style="transition-delay:.2s" tabindex="0">
+        <div class="project-inner">
+          <span class="project-num">09</span>
           <div class="project-info">
             <div class="project-name">Async Directory Brute-Forcer</div>
             <div class="project-desc">A high-performance directory scanner utilizing asyncio and aiohttp to locate hidden panels, configuration leaks, and backup archives with soft-404 detection.</div>
@@ -299,7 +689,7 @@
               <span class="feature-tag">JSON/CSV Export</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/yesshhaa/Projects/tree/main/Brute-force" class="project-link" target="_blank">GitHub Repository</a>
+              <a href="https://github.com/yesshhaa/Cybersecurity-Projects/tree/main/Brute-force" class="project-link" target="_blank">GitHub Repository</a>
             </div>
           </div>
           <div class="project-tags"><span class="project-tag">Python 3</span><span
@@ -309,9 +699,10 @@
         <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="280"></canvas></div>
       </article>
 
+      <!-- 10 HashCrack -->
       <article class="project-card reveal" style="transition-delay:.3s" tabindex="0">
         <div class="project-inner">
-          <span class="project-num">07</span>
+          <span class="project-num">10</span>
           <div class="project-info">
             <div class="project-name">HashCrack — Password Auditing Tool</div>
             <div class="project-desc">An educational password cracking script that auto-detects hash formats (MD5, SHA-256) and attacks them using dictionary scans and personal input profiling.</div>
@@ -322,7 +713,7 @@
               <span class="feature-tag">Educational Demo</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/yesshhaa/Projects/tree/main/Hashcrack" class="project-link" target="_blank">GitHub Repository</a>
+              <a href="https://github.com/yesshhaa/Cybersecurity-Projects/tree/main/Hashcrack" class="project-link" target="_blank">GitHub Repository</a>
             </div>
           </div>
           <div class="project-tags"><span class="project-tag">Python</span><span
@@ -332,9 +723,10 @@
         <div class="project-hover-preview"><canvas class="project-preview-canvas" data-hue="360"></canvas></div>
       </article>
 
+      <!-- 11 Steganography Tool -->
       <article class="project-card reveal" style="transition-delay:.4s" tabindex="0">
         <div class="project-inner">
-          <span class="project-num">08</span>
+          <span class="project-num">11</span>
           <div class="project-info">
             <div class="project-name">Steganography Tool</div>
             <div class="project-desc">A utility that embeds cryptographic-grade secret messages invisibly inside the least significant bits (LSB) of image pixels.</div>
@@ -345,7 +737,7 @@
               <span class="feature-tag">Lossless Output</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/yesshhaa/Projects/tree/main/stego-tool" class="project-link" target="_blank">GitHub Repository</a>
+              <a href="https://github.com/yesshhaa/Cybersecurity-Projects/tree/main/stego-tool" class="project-link" target="_blank">GitHub Repository</a>
             </div>
           </div>
           <div class="project-tags"><span class="project-tag">Python</span><span
@@ -357,19 +749,20 @@
     </div>
   </section>
 
+  <!-- ── Services & Capabilities ── -->
   <section id="services" class="reveal">
     <div class="services-left">
       <div class="section-tag">Expertise Areas</div>
       <h2 class="section-title" style="transition-delay:.1s">Core <span class="accent">Capabilities</span></h2>
       <p style="transition-delay:.2s">Specialized security disciplines I actively practice — ranging from infrastructure
-        defense to deep-dive forensics and offensive testing.</p>
+        defense to deep-dive forensics, risk monitoring, and offensive testing.</p>
     </div>
     <div class="services-list">
       <div class="service-item reveal"><span class="service-num">01</span>
         <div>
           <div class="service-name">Security Monitoring &amp; SIEM</div>
           <div class="service-desc">Real-time log ingestion, alert correlation, and threat detection using Splunk.
-            Building dashboards that surface anomalies before they escalate into incidents.</div>
+            Building dashboards and searches that surface anomalies before they escalate into incidents.</div>
         </div><span class="service-plus">+</span>
       </div>
       <div class="service-item reveal" style="transition-delay:.05s"><span class="service-num">02</span>
@@ -381,37 +774,35 @@
       </div>
       <div class="service-item reveal" style="transition-delay:.1s"><span class="service-num">03</span>
         <div>
-          <div class="service-name">Vulnerability Assessment</div>
-          <div class="service-desc">Systematic scanning with Nmap and Metasploit — identifying exposed services and
-            misconfigurations, followed by clear risk-prioritized reporting.</div>
+          <div class="service-name">Vulnerability Assessment &amp; GRC</div>
+          <div class="service-desc">Systematic scanning with Nmap, OpenVAS, Nessus, and Burp Suite — assessing exposure against OWASP Top 10 and NIST frameworks, followed by actionable risk-remediation reporting.</div>
         </div><span class="service-plus">+</span>
       </div>
       <div class="service-item reveal" style="transition-delay:.15s"><span class="service-num">04</span>
         <div>
           <div class="service-name">Incident Response &amp; Forensics</div>
           <div class="service-desc">Working through the full IR lifecycle — containment, eradication, recovery — backed
-            by disk and memory forensics to reconstruct exactly what happened.</div>
+            by disk and memory forensics with Autopsy and Volatility to reconstruct attack timelines.</div>
         </div><span class="service-plus">+</span>
       </div>
       <div class="service-item reveal" style="transition-delay:.2s"><span class="service-num">05</span>
         <div>
           <div class="service-name">Threat Intelligence &amp; OSINT</div>
-          <div class="service-desc">Gathering and correlating open-source intelligence to profile threat actors, enrich
-            indicators of compromise, and support proactive defense decisions.</div>
+          <div class="service-desc">Gathering and correlating open-source intelligence with Shodan and ExifTool to profile threat actors, enrich
+            indicators of compromise (IoCs), and support proactive defense decisions.</div>
         </div><span class="service-plus">+</span>
       </div>
       <div class="service-item reveal" style="transition-delay:.25s"><span class="service-num">06</span>
         <div>
-          <div class="service-name">Cloud Security &amp; IAM</div>
-          <div class="service-desc">Securing cloud environments and managing identity—configuring AWS S3 policies, 
-            monitoring IAM logs, and ensuring least-privilege access across distributed systems.</div>
+          <div class="service-name">Enterprise IAM &amp; Endpoint Hardening</div>
+          <div class="service-desc">Securing Windows/Linux endpoints, managing Active Directory authentication flows (Kerberos/NTLM), configuring least-privilege access, and orchestrating recurring patch management.</div>
         </div><span class="service-plus">+</span>
       </div>
       <div class="service-item reveal" style="transition-delay:.3s"><span class="service-num">07</span>
         <div>
-          <div class="service-name">Malware Analysis &amp; Scripting</div>
-          <div class="service-desc">Deconstructing malicious binaries and automating security tasks with Python—building
-            custom parsers and scripts to accelerate the analysis of suspicious artifacts.</div>
+          <div class="service-name">Security Scripting &amp; Tool Engineering</div>
+          <div class="service-desc">Engineering custom asynchronous security tools with Python, building specialized port scanners,
+            regex log analyzers, and LLM-assisted threat summarizers.</div>
         </div><span class="service-plus">+</span>
       </div>
     </div>
@@ -422,12 +813,12 @@
       RESPOND ·&nbsp;</div>
   </div>
 
-
   <div class="parallax-text" style="border-bottom:1px solid var(--muted)" aria-hidden="true">
     <div class="parallax-inner" id="parallax-text-2">MONITOR · HUNT · CONTAIN · RECOVER · MONITOR · HUNT · CONTAIN ·
       RECOVER ·&nbsp;</div>
   </div>
 
+  <!-- ── Interactive CLI Terminal ── -->
   <section id="terminal-section" class="reveal">
     <div class="terminal-container">
       <div class="terminal-header">
@@ -450,23 +841,27 @@
 
   <script src="js/terminal.js" defer></script>
 
+  <!-- ── Contact Section ── -->
   <section id="contact">
     <div class="contact-bg-text" aria-hidden="true">CONNECT</div>
     <div class="section-tag reveal" style="justify-content:center">Get in Touch</div>
     <h2 class="contact-title reveal" style="transition-delay:.1s">Let's Talk<br /><span class="accent">Security</span>
     </h2>
-    <p class="contact-sub reveal" style="transition-delay:.2s">Open to internships, junior SOC analyst roles, and
-      security research collaboration</p>
-    <a href="mailto:yesha.patel@email.com" class="contact-cta mag-btn reveal" style="transition-delay:.3s">Reach Out
+    <p class="contact-sub reveal" style="transition-delay:.2s">CompTIA Security+ Certified · Open to security engineer, SOC analyst, and threat defense roles in Jersey City / NYC area &amp; remote</p>
+    <a href="mailto:yesha.patel0710@gmail.com" class="contact-cta mag-btn reveal" style="transition-delay:.3s">Reach Out
       <span class="contact-cta-arrow">↗</span></a>
     <div class="contact-links reveal" style="transition-delay:.4s">
-      <a href="#">LinkedIn</a><a href="#">GitHub</a><a href="#">Hack The Box</a><a href="#">TryHackMe</a><a
-        href="#">Resume</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#resume">Resume</a>
+      <a href="https://www.linkedin.com/in/yesha-patel-99710a328/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/yesshhaa" target="_blank">GitHub</a>
+      <a href="tel:5513589212">(551) 358-9212</a>
+      <a href="mailto:yesha.patel0710@gmail.com">Email</a>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Yesha Patel · Cybersecurity Portfolio</p>
+    <p>© 2026 Yesha Patel · CompTIA Security+ Certified · Jersey City, NJ</p>
     <p>Always learning · Always defending</p>
   </footer>
 

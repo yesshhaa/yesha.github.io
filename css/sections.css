@@ -241,7 +241,10 @@
 }
 
 /* ── Certifications ── */
-#certifications { background: #0a0a0a; }
+#certifications {
+  position: relative;
+  padding: var(--section-pad);
+}
 
 /* ── Lab ── */
 #lab {
@@ -317,4 +320,24 @@
 }
 #technical-skills .skills-grid {
   justify-content: flex-start;
+}
+
+
+/* ── Certifications Section Details ── */
+#certifications {
+  padding: var(--section-pad);
+  position: relative;
+}
+.cert-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+@media (max-width: 900px) {
+  .cert-header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
 }

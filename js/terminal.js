@@ -15,49 +15,87 @@
   const COMMANDS = {
     help: () => `
 <span class="cmd">Available Commands:</span>
-  <span class="accent">whoami</span>       - Display personal information
-  <span class="accent">skills</span>       - List technical core competencies
-  <span class="accent">projects</span>     - View active security projects
-  <span class="accent">website open</span> - Display system initialization status
-  <span class="accent">banner</span>       - Display system banner
-  <span class="accent">clear</span>        - Clear the terminal screen
-  <span class="accent">help</span>         - Show this help menu
+  <span class="accent">whoami</span>         - Display personal information & credentials
+  <span class="accent">resume</span>         - View resume summary (experience, education, GRC)
+  <span class="accent">certs</span>          - View industry certifications & badges
+  <span class="accent">skills</span>         - List technical core competencies & security tools
+  <span class="accent">projects</span>       - View active security tools & repositories
+  <span class="accent">website open</span>   - Display system initialization status
+  <span class="accent">banner</span>         - Display system banner
+  <span class="accent">clear</span>          - Clear the terminal screen
+  <span class="accent">help</span>           - Show this help menu
 `,
     whoami: () => `
 <span class="cmd">Name:</span> Yesha Patel
-<span class="cmd">Role:</span> Cybersecurity Student & Security Analyst
-<span class="cmd">Location:</span> Earth / Deep Space
-<span class="cmd">Focus:</span> Threat Intelligence, SIEM Optimization, and Network Defense. 
-Currently hunting for patterns in the noise.
+<span class="cmd">Certification:</span> <span class="accent">CompTIA Security+ (SY0-701)</span>
+<span class="cmd">Role:</span> Cybersecurity Professional & Security Analyst
+<span class="cmd">Location:</span> Jersey City, NJ
+<span class="cmd">Focus:</span> Threat Intelligence, Detection Engineering, SIEM Optimization, and Network Defense. 
+Currently hunting for patterns in the noise and engineering proactive defenses.
 `,
+    resume: () => `
+<span class="cmd">=== YESHA PATEL — RESUME SUMMARY ===</span>
+<span class="accent">Location:</span> Jersey City, NJ | (551) 358-9212 | yesha.patel0710@gmail.com
+<span class="accent">Certification:</span> CompTIA Security+ (SY0-701)
+
+<span class="cmd">[WORK EXPERIENCE]</span>
+  • <span class="accent">Security Engineer</span> — IFUTURE (Jun 2023 – Aug 2024, Anand, Gujarat)
+    - Administered user accounts and access permissions under enterprise authentication controls.
+    - Monitored system logs and network activity across 20+ endpoints for anomaly detection.
+    - Enforced endpoint security standards, antivirus hardening, and recurring patch management.
+
+<span class="cmd">[EDUCATION]</span>
+  • <span class="accent">Master of Science in Cybersecurity</span> (GPA: 3.7) — Saint Peter's University (Jersey City, NJ, Feb 2026)
+    - Coursework: Risk Assessment & Compliance, Digital Forensics, Penetration Testing, Cryptography, Malware Analysis.
+  • <span class="accent">Bachelor of Science in Information Technology</span> (GPA: 3.8) — Sardar Patel University (Apr 2023)
+    - Coursework: Database Management, Operating Systems, Computer Networking, OOP.
+
+<span class="cmd">[GOVERNANCE, RISK & FRAMEWORKS]</span>
+  • OWASP Top 10, MITRE ATT&CK, NIST, ISO 27001, GRC, Compliance Monitoring, Alert Triage.
+`,
+    experience: () => COMMANDS.resume(),
+    education: () => COMMANDS.resume(),
+    certs: () => `
+<span class="cmd">Professional Certifications & Credentials:</span>
+  • <span class="accent">[VERIFIED]</span> CompTIA Security+ (SY0-701)
+    - Domain Focus: Threat Vectors, Cryptography, Security Architecture, Incident Response, Identity & Access Management
+  • <span class="accent">[IN PROGRESS]</span> ISC2 Candidate - Certified in Cybersecurity (CC)
+    - Comprehensive study notes, test simulations, and practice questions repository
+`,
+    certifications: () => COMMANDS.certs(),
+    cert: () => COMMANDS.certs(),
     skills: () => `
-<span class="cmd">Security Disciplines:</span>
-  • Monitoring & SIEM (Splunk, ELK)
-  • Network Analysis (Wireshark, TCPdump)
-  • Vulnerability Assessment (Nmap, Metasploit)
-  • Incident Response (Forensics, Containment)
-  • Threat Intelligence (OSINT, MISP)
+<span class="cmd">Security Disciplines & Tools:</span>
+  • GRC: Risk Assessment, Vulnerability Assessment, Security Policy, Compliance, Alert Triage
+  • Security Tools: Splunk (SIEM), Wireshark, Nmap, Burp Suite, Metasploit, OpenVAS, Nessus, Shodan, Autopsy, Volatility, Hashcat, ExifTool
+  • Platforms: Windows, Linux, Active Directory / Enterprise Authentication, Endpoint Security
+  • Languages: Python, SQL, MySQL, Bash Scripting, JavaScript, Microsoft 365, CSS, React
+  • Frameworks: OWASP Top 10, MITRE ATT&CK, ISO 27001, NIST
 `,
     projects: () => `
-<span class="cmd">Active Repositories:</span>
+<span class="cmd">Active Repositories & Tools:</span>
   01. <span class="accent">StudyNest</span> - Personal productivity dashboard (Next.js 14, Firebase)
-  02. <span class="accent">Improv</span> - AI-powered prompt refinement tool (Next.js 15, Groq API)
-  03. <span class="accent">Log Parser</span> - AI log analyzer (Python, Regex, Llama 3.3)
-  04. <span class="accent">Port Scanner</span> - Async TCP scanner & threat contexts (Python, asyncio)
-  05. <span class="accent">Caesar Cipher</span> - Caesar cipher cracker using frequency analysis (Python)
-  06. <span class="accent">Dir Brute-Forcer</span> - Async web directory scanner with soft-404 detection (Python, asyncio)
-  07. <span class="accent">HashCrack</span> - Passphrase auditing and hash identifier tool (Python)
-  08. <span class="accent">Stego-tool</span> - Lossless pixel-LSB image steganography utility (Python)
+  02. <span class="accent">Improve 2.0</span> - Web Vulnerability Scanner across OWASP Top 10 (FastAPI, React, Groq API)
+  03. <span class="accent">SOC-Style Log Parser</span> - Log analysis & brute-force detector (Python, Regex, Llama 3.3)
+  04. <span class="accent">Port Scanner</span> - Async TCP scanner mapped to MITRE ATT&CK T1046 (Python, asyncio)
+  05. <span class="accent">Caesar Cipher</span> - Classical frequency analysis cracker (Python)
+  06. <span class="accent">Study Tracker</span> - Terminal-style tracker with 17 subjects & 159 topics
+  07. <span class="accent">CTF Writeups</span> - PicoCTF & OverTheWire Bandit exploit & defense walkthroughs
+  08. <span class="accent">Windows Login</span> - Active Directory & Windows authentication security analysis
+  09. <span class="accent">Dir Brute-Forcer</span> - Async web directory scanner with soft-404 detection (Python)
+  10. <span class="accent">HashCrack</span> - Passphrase auditing and hash identifier tool (Python)
+  11. <span class="accent">Stego-Tool</span> - Lossless pixel-LSB image steganography utility (Python)
 `,
     'website open': () => `
 <span class="cmd">SYSTEM INITIALIZATION SUCCESSFUL</span>
   • Host: <span class="accent">yesha-portfolio-v2</span>
   • Protocol: <span class="accent">HTTPS</span>
   • Port: <span class="accent">443 (Secure)</span>
+  • Credentials: <span class="accent">CompTIA Security+ Certified</span>
   • Status: <span class="accent">Active / Fully Rendered</span>
 
 Portfolio modules loaded. Use the terminal below to query parameters.
-Type '<span class="accent">help</span>' for a list of available commands.
+Type '<span class="accent">help</span>' or '<span class="accent">resume</span>' for a list of available commands.
 `,
     banner: () => `
 <pre class="terminal-banner">
@@ -68,10 +106,10 @@ Type '<span class="accent">help</span>' for a list of available commands.
    |_| |_|      |____/|_____|\\____|
                                    
   SYSTEM STATUS: <span class="accent">STABLE</span>
-  ENCRYPTION: <span class="accent">AES-256</span>
-  IDENTITY: <span class="accent">YESHA PATEL</span>
+  CREDENTIAL: <span class="accent">COMPTIA SECURITY+ CERTIFIED</span>
+  IDENTITY: <span class="accent">YESHA PATEL · JERSEY CITY, NJ</span>
 </pre>
-Welcome to the YP-SEC Terminal. Type '<span class="accent">help</span>' to begin.
+Welcome to the YP-SEC Terminal. Type '<span class="accent">help</span>' or '<span class="accent">resume</span>' to begin.
 `,
     clear: () => {
       terminalOutput.innerHTML = '';
