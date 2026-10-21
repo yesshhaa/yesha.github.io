@@ -34,15 +34,10 @@
 Currently hunting for patterns in the noise and engineering proactive defenses.
 `,
     resume: () => `
-<span class="cmd">=== YESHA PATEL — RESUME SUMMARY ===</span>
+<span class="cmd">=== YESHA PATEL — RESUME & CREDENTIALS ===</span>
 <span class="accent">Location:</span> Jersey City, NJ | (551) 358-9212 | yesha.patel0710@gmail.com
 <span class="accent">Certification:</span> CompTIA Security+ (SY0-701)
-
-<span class="cmd">[WORK EXPERIENCE]</span>
-  • <span class="accent">Security Engineer</span> — IFUTURE (Jun 2023 – Aug 2024, Anand, Gujarat)
-    - Administered user accounts and access permissions under enterprise authentication controls.
-    - Monitored system logs and network activity across 20+ endpoints for anomaly detection.
-    - Enforced endpoint security standards, antivirus hardening, and recurring patch management.
+<span class="accent">Full Resume:</span> <a href="resume.pdf" target="_blank" style="color:var(--accent); text-decoration:underline;">resume.pdf ↗</a>
 
 <span class="cmd">[EDUCATION]</span>
   • <span class="accent">Master of Science in Cybersecurity</span> (GPA: 3.7) — Saint Peter's University (Jersey City, NJ, Feb 2026)
@@ -53,11 +48,21 @@ Currently hunting for patterns in the noise and engineering proactive defenses.
 <span class="cmd">[GOVERNANCE, RISK & FRAMEWORKS]</span>
   • OWASP Top 10, MITRE ATT&CK, NIST, ISO 27001, GRC, Compliance Monitoring, Alert Triage.
 `,
-    experience: () => COMMANDS.resume(),
-    education: () => COMMANDS.resume(),
+    education: () => `
+<span class="cmd">=== ACADEMIC EDUCATION ===</span>
+  • <span class="accent">Master of Science in Cybersecurity</span> (GPA: 3.7)
+    Saint Peter's University — Jersey City, NJ | Feb 2026
+    Coursework: Risk Assessment & Compliance, Digital Forensics, Penetration Testing, Cryptography, Malware Analysis & Defense.
+
+  • <span class="accent">Bachelor of Science in Information Technology</span> (GPA: 3.8)
+    Sardar Patel University — Anand, Gujarat | Apr 2023
+    Coursework: Database Management Systems, Operating Systems, Computer Networking, OOP.
+`,
     certs: () => `
 <span class="cmd">Professional Certifications & Credentials:</span>
   • <span class="accent">[VERIFIED]</span> CompTIA Security+ (SY0-701)
+    - Credly Badge: <a href="https://www.credly.com/badges/ed95434d-7df2-4f19-b7eb-9d0ea60871ae/linked_in_profile" target="_blank" style="color:var(--accent); text-decoration:underline;">Verify on Credly ↗</a>
+    - Candidate ID: COMP001023123210
     - Domain Focus: Threat Vectors, Cryptography, Security Architecture, Incident Response, Identity & Access Management
   • <span class="accent">[IN PROGRESS]</span> ISC2 Candidate - Certified in Cybersecurity (CC)
     - Comprehensive study notes, test simulations, and practice questions repository
