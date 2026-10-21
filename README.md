@@ -1,4 +1,4 @@
-# Yesha Patel — CompTIA Security+ Certified Cybersecurity Portfolio
+# Yesha Patel - Portfolio
 
 Portfolio website showcasing cybersecurity projects, detection engineering tools, threat intelligence, and certifications.
 
