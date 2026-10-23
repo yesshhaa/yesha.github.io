@@ -20,6 +20,12 @@ yesha-portfolio/
 │   ├── animations.css       ← @keyframes + .reveal utility classes
 │   └── responsive.css       ← Tablet (900px) + Mobile (600px) breakpoints
 │
+├── tools/
+│   └── cookie-analyzer/     ← Live Cookie & Session Analyzer (client-side tool)
+│       ├── index.html
+│       ├── analyzer.css
+│       └── analyzer.js      ← Parser, OWASP checks, entropy/JWT analysis, header hardening
+│
 └── js/
     ├── cursor.js            ← Custom magnetic cursor (mouse follow)
     ├── loader.js            ← Loading screen counter animation
