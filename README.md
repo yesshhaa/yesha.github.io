@@ -34,6 +34,34 @@ yesha-portfolio/
 
 ---
 
+## 🛠 Improve 2.0 — Security Fix Navigator (`/improve`)
+
+A browser-only tool for small businesses and IT generalists. Import findings from the
+security tools you already run and get a ranked fix plan where **every finding ends in a
+verifiable action**, not just a severity score.
+
+- **Import:** SARIF (Semgrep, CodeQL, Snyk…), Trivy JSON, OWASP ZAP JSON, Nessus CSV, OpenVAS CSV, generic CSV/JSON
+- **Explain:** plain-language "what it means", "how it could be exploited" and impact for each issue
+- **Prioritise:** transparent 0–100 score (severity, exploitability, CISA KEV, exposure, asset importance, effort) grouped into *Fix today / This week / This month / Backlog*
+- **Verify:** copy-paste check commands with the expected result; "Verified" unlocks only when every check passes, and re-importing a scan confirms or reopens fixes automatically
+- **Report:** Markdown action plan, CSV tracker export, JSON backup
+
+Nothing is uploaded — parsing and storage happen in the browser (`localStorage`).
+Sample reports live in `improve/samples/`.
+
+```
+improve/
+├── index.html
+├── css/improve.css
+├── js/playbooks.js   ← remediation knowledge base (explain / exploit / fix / verify)
+├── js/parsers.js     ← tool format detection + normalisation
+├── js/engine.js      ← playbook matching, scoring, fix-action grouping
+├── js/app.js         ← UI, state, re-scan comparison, reports
+└── samples/          ← demo Nessus, ZAP and Trivy exports
+```
+
+---
+
 ## 🚀 How to Run
 
 **Option 1 — Just open in browser:**
